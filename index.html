@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- tailwind css link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <!-- font link -->
+    
+    <!-- font awesome link -->
+    <script src="https://kit.fontawesome.com/a57cd1417a.js" crossorigin="anonymous"></script>
+
+    <!-- tailwind custom code-->
+    <script>
+        tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                'pri-color': '#11CB78',
+                'sec-color': '#F2FFF9',
+                },
+                fontFamily: {
+                    'name-font':'ddddddd',
+                }
+            }
+        }
+        }
+    </script>
+</head>
+<body class="box-border p-0 m-0 bg-[#fafafa]">
+    <!-- header -->
+    <header class="bg-pri-color py-4 mb-8">
+        <div class="max-w-[712px] mx-5 md:mx-auto flex justify-between items-center">
+            <div class="">
+                <h1 id="name-project" class="text-xl font-extrabold py-3 px-4 border border-white text-white rounded-xl">BMI CALCULATOR</h1>
+            </div>
+            <div class="">
+                <ul class="sm:flex gap-5 hidden text-white font-medium">
+                    <li class="hover:text-gray-200"><a href="index.html">Home</a></li>
+                    <li class="hover:text-gray-200"><a href="#">Contact</a></li>
+                    <li class="hover:text-gray-200"><a href="#">Review</a></li>
+                </ul>
+                <i id="menu-on-btn" class="fa-solid fa-bars sm:hidden text-white text-5xl "></i>
+            </div>
+            <div id="menu-pge" class="absolute w-[50%] h-[100%] top-0 right-0 bg-pri-color border-l border-black sm:hidden hidden">
+                <div>
+                    <div class="text-right mr-3 mt-2"><span id="menu-of-btn" class="fa-solid fa-xmark text-5xl text-right text-red-600"></span></div>
+                    <ul class="sm:flex gap-5 text-white font-medium">
+                        <hr>
+                        <li class="hover:text-gray-200 ml-3 mb-1"><a href="index.html">Home</a></li>
+                        <hr>
+                        <li class="hover:text-gray-200 ml-3 mb-1"><a href="#">Contact</a></li>
+                        <hr>
+                        <li class="hover:text-gray-200 ml-3 mb-1"><a href="#">Review</a></li>
+                        <hr>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- main -->
+    <main class="max-w-[712px] mx-5 md:mx-auto">
+        <!-- header img -->
+        <div class="mb-7 ">
+            <img id="header-img" class="h-[221px] w-full object-cover rounded-2xl sm:block" src="./bmi.png" alt="img">
+        </div>
+        <!-- input & display section -->
+        <div class="grid sm:grid-cols-2 gap-5 justify-center">
+            <!-- input value -->
+            <div class="px-8 py-7 shadow rounded-[20px] bg-white order-5">
+                <div class="">
+                    <div class="w-[293px] mx-auto">
+                    
+                        <label for="hight" class="text-2xl font-bold le text-pri-color mr-10">Hight :
+                        </label>
+                        <input id="hight-fit" type="text" placeholder="Fit" class="w-[67px] h-[31px] border border-pri-color rounded-lg text-center font-medium bg-sec-color outline-pri-color mr-[15px]" />
+                        <input id="hight-inch" type="text" placeholder="Inch" class="w-[67px] h-[31px] border border-pri-color rounded-lg text-center font-medium bg-sec-color outline-pri-color" />
+                        <br>
+                        <label for="Age" class="text-2xl font-bold le text-pri-color mr-[59px]">Age :
+                        </label>
+                        <input id="age" type="text" placeholder="Age" class="w-[154px] h-[31px] border border-pri-color rounded-lg text-center font-medium bg-sec-color outline-pri-color mr-[15px] mt-4" />
+                        <br>
+                        <label for="Age" class="text-2xl font-bold le text-pri-color mr-[22px]">Weight :
+                        </label>
+                        <input id="Weight" type="text" placeholder="Weight KG" class="w-[154px] h-[31px] border border-pri-color rounded-lg text-center font-medium bg-sec-color outline-pri-color mr-[15px] mt-4" />
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button id="calculate" class="bg-gradient-to-l to-green-500 from-pri-color py-2 px-12 text-2xl font-bold text-white rounded-lg mt-9 hover:scale-[1.01] focus:bg-gradient-to-r focus:from-pri-color focus:to-green-500">Calculate</button>
+                </div>
+            </div>
+            <!-- Display -->
+            <div class="relative">
+                <div id="display" class="px-8 py-7 shadow rounded-[20px] bg-white order-1 hidden sm:block">
+                    <div class=""><img class="mx-auto" src="./Vector 1.png" alt=""></div>
+                    <div id="arrow" class="absolute tir transition duration-[3s] ease-in-out  -rotate-[80deg] origin-bottom top-14 left-0 right-0 "><img class="mx-auto" src="./Arrow 1.png" alt=""></div>
+
+                    <!-- Display info -->
+                    <div class="mt-5 ">
+                        <h2 class="font-semibold text-xl">Result: <span id="result-d" class="text-pri-color">...</span></h2>
+                        <h2 class="font-semibold text-xl">Condition: <span id="health-condition" class="text-pri-color">...</span></h2>
+                        <h2 class="font-semibold text-xl">Heigh: <span id="hight-d" class="text-pri-color">...</span></h2>
+                        <h2 class="font-semibold text-xl">Weight: <span id="weight-d" class="text-pri-color">...</span></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="bg-pri-color mt-8">
+        <div class="p-5 text-gray-200">
+            <h2 class="text-center text-xl">Development By Shakil Ahamed</h2>
+            <h2 class="text-center">&COPY;Copyright all rights reserved 2025</h2>
+        </div>
+    </footer>
+    <script src="./utiliti.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
