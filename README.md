@@ -12,3 +12,6 @@ You can check your BMI using this app.
 2. CSS 
 3. Tailwinds css
 4. Javascript
+
+## Live link https://shakilahamed07.github.io/BMI-Calculetor-App/
+ 
