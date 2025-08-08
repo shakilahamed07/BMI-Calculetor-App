@@ -8,7 +8,7 @@ It features a responsive design and a clean user interface.
 
 ## 📸 Screenshot
 <p align="center">
-  <img src="https://i.ibb.co.com/WdLPxWw/Screenshot-2025-08-08-191848.png" alt="Banner" width="100%" />
+  <img src="https://i.ibb.co.com/WdLPxWw/Screenshot-2025-08-08-191848.png" alt="Banner" width="70%" />
 </p>
 
 ## 🚀 Live Demo
@@ -32,3 +32,12 @@ It features a responsive design and a clean user interface.
 - Tailwind CSS  
 - JavaScript  
  
+## 🛠️ Project Setup (Optional - Only if needed locally)
+
+1. Clone the repository:
+   ```bash
+   git clone ## 🛠️ Project Setup (Optional - Only if needed locally)
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/shakilahamed07/Banking-payoo-app.git
