@@ -7,7 +7,7 @@ It features a responsive design and a clean user interface.
 ---
 
 ## 📸 Screenshot
-![App Screenshot](https://i.ibb.co/YOUR_IMAGE_LINK_HERE.pn)
+![Banner](https://i.ibb.co.com/WdLPxWw/Screenshot-2025-08-08-191848.png)
 
 ## 🚀 Live Demo
 
